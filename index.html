@@ -16,10 +16,49 @@
 
 <header>
 
+<nav class="menu">
+
 <h1>Guia Turístico</h1>
-<p>Explore os pontos turísticos da região</p>
+
+<ul>
+<li><a href="#inicio">Início</a></li>
+<li><a href="#lugares">Locais</a></li>
+<li><a href="#sobre">Sobre</a></li>
+</ul>
+
+</nav>
 
 </header>
+
+<section id="inicio" class="hero">
+
+<h2>Explore os pontos turísticos da região</h2>
+
+<p>
+Descubra lugares incríveis, veja fotos e encontre a localização no mapa.
+</p>
+
+<a href="#lugares" class="botao">
+Explorar lugares
+</a>
+
+</section>
+
+
+
+<section id="lugares">
+
+<input
+type="text"
+id="busca"
+placeholder="Buscar lugar..."
+class="campo-busca"
+/>
+
+<div id="lista-lugares" class="grid-lugares"></div>
+
+</section>
+
 
 <main>
 
@@ -27,14 +66,18 @@
 
 </main>
 
-<footer>
+<footer id="sobre">
 
-<h3>Projeto desenvolvido por</h3>
+<h3>Projeto Acadêmico</h3>
 
 <p>
+Sistema desenvolvido para divulgação de pontos turísticos.
+</p>
+
+<p>
+Desenvolvido por:<br>
 Carlos Daniel,  Carlos Eduardo<br>
 Emmanuel Victor,  Mayara Santos<br>
-
 </p>
 
 </footer>
@@ -42,5 +85,8 @@ Emmanuel Victor,  Mayara Santos<br>
 <script src="js/lugares.js"></script>
 <script src="js/script.js"></script>
 
+
+
+<button id="topo">↑</button>
 </body>
 </html>

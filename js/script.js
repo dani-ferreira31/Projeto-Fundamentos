@@ -33,4 +33,56 @@ document.getElementById("mapaLugar").href = lugar.mapa;
 
 }
 
+const busca = document.getElementById("busca");
 
+if(busca){
+
+busca.addEventListener("input", function(){
+
+const texto = busca.value.toLowerCase();
+
+lista.innerHTML = "";
+
+lugares
+.filter(lugar => lugar.nome.toLowerCase().includes(texto))
+.forEach((lugar, index)=>{
+
+lista.innerHTML += `
+
+<div class="card" style="animation-delay:${index * 0.2}s">
+
+<img src="${lugar.imagem}">
+
+<h2>${lugar.nome}</h2>
+
+<a href="lugar.html?id=${lugar.id}">
+Ver detalhes
+</a>
+
+</div>
+
+`;
+
+});
+
+});
+
+}
+
+
+const botaoTopo = document.getElementById("topo");
+
+if(botaoTopo){
+
+botaoTopo.onclick = function(){
+
+window.scrollTo({
+
+top:0,
+behavior:"smooth"
+
+});
+
+};
+
+}
