@@ -1,8 +1,8 @@
 const lista = document.getElementById("lista-lugares");
 
-if(lista){
-lugares.forEach(lugar => {
-lista.innerHTML += `
+if (lista) {
+    lugares.forEach(lugar => {
+        lista.innerHTML += `
 <div class="card">
 <img src="${lugar.imagem}">
 <h2>${lugar.nome}</h2>
@@ -11,43 +11,55 @@ Ver detalhes
 </a>
 </div>
 `;
-});
+    });
 }
 
-function pegarParametro(nome){
-const url = new URLSearchParams(window.location.search);
-return url.get(nome);
+function pegarParametro(nome) {
+    const url = new URLSearchParams(window.location.search);
+    return url.get(nome);
 }
 
 const id = pegarParametro("id");
 
-if(id){
+if (id) {
 
-const lugar = lugares.find(l => l.id == id);
+    const lugar = lugares.find(l => l.id == id);
 
-document.getElementById("nomeLugar").innerText = lugar.nome;
-document.getElementById("imagemLugar").src = lugar.imagem;
-document.getElementById("descricaoLugar").innerText = lugar.descricao;
+    if (lugar) {
 
-document.getElementById("mapaLugar").href = lugar.mapa;
+        if (id == 1) {
+            document.body.classList.add("layout-ponteLeitao");
+        } 
+        if (id == 2) {
+            document.body.classList.add("layout-centroCultural");
+        } 
+        if (id == 3) {
+            document.body.classList.add("layout-igrejaMatriz");
+        }
 
+        document.getElementById("nomeLugar").innerText = lugar.nome;
+        document.getElementById("imagemLugar").src = lugar.imagem;
+        document.getElementById("descricaoLugar").innerText = lugar.descricao;
+        document.getElementById("mapaLugar").href = lugar.mapa;
+
+    }
 }
 
 const busca = document.getElementById("busca");
 
-if(busca){
+if (busca) {
 
-busca.addEventListener("input", function(){
+    busca.addEventListener("input", function () {
 
-const texto = busca.value.toLowerCase();
+        const texto = busca.value.toLowerCase();
 
-lista.innerHTML = "";
+        lista.innerHTML = "";
 
-lugares
-.filter(lugar => lugar.nome.toLowerCase().includes(texto))
-.forEach((lugar, index)=>{
+        lugares
+            .filter(lugar => lugar.nome.toLowerCase().includes(texto))
+            .forEach((lugar, index) => {
 
-lista.innerHTML += `
+                lista.innerHTML += `
 
 <div class="card" style="animation-delay:${index * 0.2}s">
 
@@ -63,26 +75,26 @@ Ver detalhes
 
 `;
 
-});
+            });
 
-});
+    });
 
 }
 
 
 const botaoTopo = document.getElementById("topo");
 
-if(botaoTopo){
+if (botaoTopo) {
 
-botaoTopo.onclick = function(){
+    botaoTopo.onclick = function () {
 
-window.scrollTo({
+        window.scrollTo({
 
-top:0,
-behavior:"smooth"
+            top: 0,
+            behavior: "smooth"
 
-});
+        });
 
-};
+    };
 
 }
