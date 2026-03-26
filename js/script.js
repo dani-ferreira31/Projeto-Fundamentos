@@ -98,3 +98,28 @@ if (botaoTopo) {
     };
 
 }
+
+// Captura todos os links dentro do menu mobile
+const linksMobile = document.querySelectorAll('.menu-mobile a');
+const menuElemento = document.getElementById('menuLateral');
+
+if (menuElemento) {
+    // Inicializa o componente do Bootstrap
+    const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(menuElemento);
+
+    linksMobile.forEach(link => {
+        link.addEventListener('click', (e) => {
+            // Pegamos o destino do link (ex: index.html#lugares)
+            const href = link.getAttribute('href');
+
+            // Se for um link de âncora para a mesma página
+            if (href.includes('#')) {
+                // Fechamos o menu
+                bsOffcanvas.hide();
+                
+                // Se estivermos em uma página diferente da index, 
+                // o navegador mudará de página automaticamente pelo href.
+            }
+        });
+    });
+}

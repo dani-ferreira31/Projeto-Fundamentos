@@ -22,10 +22,15 @@
 <body>
 
     <header>
-
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="p-4">
-                <div class="menu">
+        <div class="offcanvas offcanvas-start menu-lateral-bg" tabindex="-1" id="menuLateral"
+            aria-labelledby="menuLateralLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="menuLateralLabel" style="color: white; font-weight: 600;">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="menu-mobile">
                     <ul>
                         <li><a href="#inicio">Início</a></li>
                         <li><a href="#lugares">Locais</a></li>
@@ -36,16 +41,16 @@
         </div>
         <nav class="navbar">
             <div class="container-fluid contaiNav">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral"
+                    aria-controls="menuLateral" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <h3>
-                    Lugares Turistucos e Historicos <br>
+                    Lugares Turísticos e Históricos <br>
                     Vale do Mamanguape
                 </h3>
+
                 <div class="menu desktop">
                     <ul>
                         <li><a href="#inicio">Início</a></li>
