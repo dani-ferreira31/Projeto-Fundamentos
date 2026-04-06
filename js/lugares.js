@@ -50,7 +50,7 @@ const lugares = [
 
     {
         id: 4,
-        nome: "Área de Proteção Ambiental da Barra do Rio Mamanguape",
+        nome: "Barra do Rio Mamanguape",
         imagem: "img/imagemPraiaBarragem.jpg",
         descricao: `A Área de Proteção Ambiental da Barra do Rio Mamanguape (ou APA do Mamanguape) é uma unidade de conservação federal brasileira localizada na Barra do Mamanguape, no estado brasileiro da Paraíba. A reserva foi criada em 10 de setembro de 1993 pelo decreto federal nº 924. Anteriormente, fazia parte do território de caça e pesca originalmente utilizado pelas populações indígenas potiguaras.
         
@@ -58,5 +58,43 @@ const lugares = [
         mapa: "https://maps.app.goo.gl/r8dyY1e8vZJ4R8zg9"
     },
 
-  
+    {
+        id: 5,
+        nome: "Cine Teatro Orion Rio Tinto",
+        imagem: "img/orion.jpg",
+        descricao: `Este imponente prédio em Rio Tinto é o maior símbolo do capitalismo industrial na região. Construído pela Família Lundgren, ele servia como o centro de lazer para os operários da antiga fábrica de tecidos.
+
+        Ele representa o tempo em que a economia do Vale dependia da produção fabril. Hoje, sua estrutura é um patrimônio histórico que preserva a memória da "cidade-fábrica" e se prepara para ser um grande centro cultural público.`,
+        mapa: "https://maps.app.goo.gl/rhUS1ZRnWrgsAffR6"
+    },
+
+    {
+        id: 6,
+        nome: "CCAE – UFPB Campus IV",
+        imagem: "img/ccae.jpg",
+        descricao: `O Centro de Ciências Aplicadas e Educação (CCAE) da Universidade Federal da Paraíba (UFPB) foi estabelecido no ano de 2007 nas cidades vizinhas Rio Tinto e Mamanguape, do litoral norte paraibano. O CCAE foi criado com o objetivo de atender às necessidades educacionais, culturais, sociais e econômicas da região, oferecendo uma variedade de cursos de graduação, mestrados e especializações. O CCAE tem se consolidado como um importante ator no desenvolvimento local, desenvolvendo ensino, pesquisa e extensão de forma indissociável.
+        
+        A UFPB, através do Programa Expandir, elaborou o projeto de criação do Campus IV, Litoral Norte, no ano de 2005. No início de 2006, o MEC aprovou o projeto da UFPB, e o Campus IV foi criado pelo CONSUNI.
+
+        A ideia central do Governo do Presidente Luiz Inácio Lula da Silva foi de interiorizar o ensino universitário, pois naquele contexto, estava restrito as capitais e grandes cidades. A instalação do Campus IV – Centro de Ciências Aplicadas e Educação revolucionou o território do Vale do Mamanguape, pois os cursos geraram muitos graduados que foram inseridos no mercado, e, pois passaram a fazer a diferença visto que era um capital cultural com diversas distinções, seja no ensino com Pedagogia, Matemática, Letras, Ciência da Computação, seja nos cursos aplicados como Antropologia, Secretariado, Administração, Contabilidade, Designer, Ecologia e Sistema de Informação. Atualmente, há pós-graduação em Letras, Ecologia, Antropologia e Administração.
+
+        A UFPB reafirma sua vocação à interiorização com a implantação do Campus IV na região da Mata Paraibana, mais precisamente nas cidades de Mamanguape e Rio Tinto, na microrregião Litoral Norte. A sua atuação é voltada às necessidades da vida educacional, cultural, social e econômica dos 396.338 habitantes do Vale do Mamanguape, da microrregião de Sapé e dos 22 municípios vizinhos. A distância média desses municípios para o Campus IV é de aproximadamente 20 km, e para a cidade de João Pessoa, capital do Estado da Paraíba, a distância é de 50 km.
+
+        Administrativamente, o Centro de Ciências Aplicadas e Educação, único que existe no Campus IV, subdivide-se em duas unidades, localizadas nos municípios de Rio Tinto e Mamanguape, e oferece onze cursos de graduação, três mestrados acadêmicos (sendo um profissional) e duas especializações.
+
+        O CCAE vem se consolidando ao desenvolver de forma indissociável o ensino, a pesquisa e a extensão. E neste sentido, esse calendário tem um papel importante no sentido de tornar visível um pouco da trajetória do Campus IV no Litoral Norte, que se constitui como um importante ator para o desenvolvimento local.`,
+        mapa: "https://maps.app.goo.gl/hCguukpkiW93zZky8"
+    },
+
+    {
+        id: 7,
+        nome: "Praça 13 de Maio Mamanguape",
+        imagem: "img/praca13.jpg",
+        descricao: `Localizada no centro de Mamanguape, esta praça é o exemplo perfeito da transição para o capitalismo de serviços. É aqui que a vida social acontece, movida pelo comércio, pela gastronomia e pelos eventos culturais.
+
+        Com o projeto "Coreto Cultural" e as festas tradicionais, a praça mostra como o lazer e o pequeno empreendedorismo geram renda para a cidade. É um espaço revitalizado que une a história colonial ao movimento da vida moderna.`,
+        mapa: "https://maps.app.goo.gl/cJikahJW2usnHjfs5"
+    },
+
+
 ];

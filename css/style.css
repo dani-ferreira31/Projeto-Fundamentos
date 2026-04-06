@@ -269,6 +269,22 @@ footer {
 
 }
 
+.img1 {
+        width: 12%;
+        padding: 5px;
+    }
+
+    .img3 {
+        width: 15%;
+        padding: 5px;
+    }
+
+    .img2,
+    .img4 {
+        width: 18%;
+        padding: 5px;
+    }
+
 .menu {
     display: flex;
     justify-self: center;
@@ -394,7 +410,8 @@ footer {
 
 @media(min-width:1000px) {
 
-    h3, h2{
+    h3,
+    h2 {
         font-weight: bold;
     }
 
@@ -405,6 +422,22 @@ footer {
         justify-content: space-between;
         max-width: 1200px;
         margin: auto;
+    }
+
+    .img1 {
+        width: 50px;
+        padding: 5px;
+    }
+
+    .img3 {
+        width: 65px;
+        padding: 5px;
+    }
+
+    .img2,
+    .img4 {
+        width: 90px;
+        padding: 5px;
     }
 
     .menu h3 {
@@ -465,10 +498,94 @@ footer {
         width: 40%;
     }
 
+    .layout-CineOrion .detalhes {
+        margin-top: 40px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .layout-CineOrion #imagemLugar {
+        width: 40%;
+    }
+
+    .layout-ccae .detalhes {
+        margin-top: 40px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .layout-ccae #imagemLugar {
+        width: 50%;
+    }
+
+    .layout-praca13 .detalhes {
+        margin-top: 40px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .layout-praca13 #imagemLugar {
+        width: 50%;
+    }
+
     .grid-lugares {
 
         grid-template-columns: 1fr 1fr 1fr;
 
     }
 
+}
+
+
+/* ESTILOS DO MENU LATERAL (OFFCANVAS) */
+.menu-lateral-bg {
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria)) !important;
+}
+
+.menu-mobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.menu-mobile a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.9;
+    transition: 0.2s;
+    display: block;
+}
+
+.menu-mobile a:hover {
+    opacity: 1;
+    padding-left: 10px;
+    /* Dá um efeito legal de deslizar o texto ao passar o dedo/mouse */
+}
+
+/* Rolagem suave para toda a página quando clicar em um link # */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Controlar a largura do Menu Lateral no celular */
+#menuLateral {
+    max-width: 280px;
+    /* Você pode aumentar ou diminuir esse valor se achar necessário */
+}
+
+/* Ajuste para a âncora não ficar escondida atrás do header fixo */
+section {
+    scroll-margin-top: 100px;
+    /* Isso faz a rolagem parar um pouco antes, dando respiro */
+}
+
+/* Garante que o Offcanvas tenha prioridade visual */
+.offcanvas {
+    z-index: 1050 !important;
 }
