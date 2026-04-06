@@ -36,6 +36,9 @@ if (id) {
         if (id == 3) {
             document.body.classList.add("layout-igrejaMatriz");
         }
+        if (id == 4) {
+            document.body.classList.add("layout-BarragemPraia");
+        }
 
         document.getElementById("nomeLugar").innerText = lugar.nome;
         document.getElementById("imagemLugar").src = lugar.imagem;

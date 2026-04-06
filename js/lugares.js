@@ -48,5 +48,15 @@ const lugares = [
         mapa: "https://maps.app.goo.gl/RuqRx4FaYuWRMftE8"
     },
 
+    {
+        id: 4,
+        nome: "Área de Proteção Ambiental da Barra do Rio Mamanguape",
+        imagem: "img/imagemPraiaBarragem.jpg",
+        descricao: `A Área de Proteção Ambiental da Barra do Rio Mamanguape (ou APA do Mamanguape) é uma unidade de conservação federal brasileira localizada na Barra do Mamanguape, no estado brasileiro da Paraíba. A reserva foi criada em 10 de setembro de 1993 pelo decreto federal nº 924. Anteriormente, fazia parte do território de caça e pesca originalmente utilizado pelas populações indígenas potiguaras.
+        
+        A área conta com remanescentes da Mata Atlântica, além de outros biomas como mangue, julgados de fundamental importância para a preservação, como a maior área de manguezal conservado do estado da Paraíba (a porção estuarina apresenta suas margens ocupadas por cerca de seis mil hectares de manguezal).`,
+        mapa: "https://maps.app.goo.gl/r8dyY1e8vZJ4R8zg9"
+    },
+
   
 ];
